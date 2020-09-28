@@ -14,7 +14,7 @@ Main features:
 
 -Remembers last focused Vertical row item without scrolling randomly.
 
--Fixes this issue https://stackoverflow.com/questions/54253974/android-nested-recyclerview-scrolling-itself-when-traverse-through-parent-recyc
+-Fixes this issue https://stackoverflow.com/questions/54253974/android-nested-recyclerview-scrolling-itself-when-traverse-through-parent-recyc (with the help of the persistent focus wrapper)
 
 
 ##########################################
