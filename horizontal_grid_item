@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/white"
+        android:id="@+id/section_title"
+        android:textSize="@dimen/_10ssp"
+        android:layout_width="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingStart="2dp"
+        android:layout_height="wrap_content"/>
+
+        <PersistentFocusWrapper
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CustomTVRecyclerView
+                android:layout_below="@id/section_title"
+                android:id="@+id/CarouselsRowRv"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                app:tv_layoutManager="CustomLayoutManager"
+                app:tv_selectedItemOffsetEnd="656dp"
+                android:layout_height="125.4dp" />
+
+        </PersistentFocusWrapper>
+
+</LinearLayout>
