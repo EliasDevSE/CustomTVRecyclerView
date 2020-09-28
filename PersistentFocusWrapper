@@ -1,5 +1,3 @@
-package com.selecttvapp;
-
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Parcel;
