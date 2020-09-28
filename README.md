@@ -14,7 +14,7 @@ Main features:
 ## Additional Notes and explanations
 
 * In order to add netflix styled cards carousels, all you need to do is define an additional vertical recyclerView from the custom recyclerView class in your project and use the horiztonal_grid_item for singular items in rows.
-* In order to change the focus offset (currently set to the first item), you need to change app:tv_selectedItemOffsetEnd="656dp" and you can also change the calculations for dx and dy to find child rectangles in the CustomRecyclerView (The function name is requestChildRectangleOnScreen). 
+* In order to change the focus offset (currently set to the first item), you need to change app:tv_selectedItemOffsetEnd="656dp" and you can also change the calculations for dx and dy to find child rectangles in the CustomRecyclerView (The function name is requestChildRectangleOnScreen). This will also depend on your item's height, so make sure to change the offsets when you change the item sizes.
 * As a final note, the purpose of the PersistentFocusWrapper is to fix an android AOSP bug that makes the cursor lose focus when scrolling up and down in horizontal and vertical recyclerViews.
 
 If you require more help, feel free to make an issue.
