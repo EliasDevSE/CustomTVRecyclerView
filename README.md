@@ -15,3 +15,15 @@ Main features:
 -Remembers last focused Vertical row item without scrolling randomly.
 
 -Fixes this issue https://stackoverflow.com/questions/54253974/android-nested-recyclerview-scrolling-itself-when-traverse-through-parent-recyc
+
+
+##########################################
+
+In order to add netflix styled cards carousels, all you need to do is define an additional vertical recyclerView from the custom recyclerView class in this class and use the horiztonal_grid_item in the project for singular items in rows.
+
+In order to change the focus offset (currently set to the first item), you need to change app:tv_selectedItemOffsetEnd="656dp" and you can also change the calculations for dx and dy to find child rectangles in the CustomRecyclerView (The function name is requestChildRectangleOnScreen). 
+
+As a final note, the purpose of the PersistentFocusWrapper is to fix an android AOSP bug that makes the cursor lose focus when scrolling up and down in horizontal and vertical recyclerViews.
+
+If you require more help, feel free to make an issue.
+
